@@ -65,32 +65,43 @@ var goalBox = svgContainer
   .attr("stroke-width", 2);
 
 d3.json("goalData.json", function(data) {
-  //   Object.values(data.players).forEach(player => {
-  //     player.forEach(goal => {
-  //       console.log(goal.position);
-  //     });
-  //   });
+  Object.values(data.players).forEach(player => {
+    player.forEach(goal => {
+      console.log(goal);
+      let x = goal.position[0];
+      let y = goal.position[1];
+      var goal1 = svgContainer
+        .append("circle")
+        .attr("cx", x)
+        .attr("cy", y)
+        .attr("r", 8)
+        .attr("stroke", "white")
+        .attr("fill", "red")
+        .attr("stroke-width", 2)
+        .on("mouseover", function(d) {
+          goal1.attr("fill", "green").attr("r", 10);
+        })
+        .on("mouseout", function(d) {
+          goal1.attr("fill", "red").attr("r", 8);
+        });
+    });
+  });
+
   console.log(data.players.MohamedSalah[0].position[0]);
   console.log(data.players.MohamedSalah[0].position[1]);
-  //   debugger;
-  var goal1 = svgContainer
-    .append("circle")
-    .attr("cx", data.players.MohamedSalah[21].position[0])
-    .attr("cy", data.players.MohamedSalah[21].position[1])
-    .attr("r", 5)
-    .attr("stroke", "white")
-    .attr("fill", "red")
-    .attr("stroke-width", 2);
 
-  //   var goal2 = svgContainer
-  //     .append("circle")
-  //     .attr("cx", data.players.MohamedSalah[1].position[0])
-  //     .attr("cy", data.players.MohamedSalah[1].position[1])
-  //     .attr("r", 5)
-  //     .attr("stroke", "white")
-  //     .attr("fill", "blue")
-  //     .attr("stroke-width", 2)
-  //     .on("hover", function(data) {
-  //       circle.style("fill", "white");
-  //     });
+  // var goal1 = svgContainer
+  //   .append("circle")
+  //   .attr("cx", data.players.MohamedSalah[0].position[0])
+  //   .attr("cy", data.players.MohamedSalah[0].position[1])
+  //   .attr("r", 5)
+  //   .attr("stroke", "white")
+  //   .attr("fill", "red")
+  //   .attr("stroke-width", 2)
+  //   .on("mouseover", function(d) {
+  //     goal1.attr("fill", "green");
+  //   })
+  //   .on("mouseout", function(d) {
+  //     goal1.attr("fill", "red");
+  //   });
 });
