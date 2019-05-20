@@ -1,11 +1,11 @@
 //Make an SVG Container
-var svgContainer = d3
+let svgContainer = d3
   .select("body")
   .append("svg")
   .attr("width", 1400)
-  .attr("height", 600);
+  .attr("height", 1200);
 
-var rectangle = svgContainer
+let rectangle = svgContainer
   .append("rect")
   .attr("x", 90)
   .attr("y", 10)
@@ -15,17 +15,17 @@ var rectangle = svgContainer
   .attr("stroke", "black")
   .attr("stroke-width", 2);
 
-var mainOutline = svgContainer
+let mainOutline = svgContainer
   .append("rect")
   .attr("x", 110)
   .attr("y", 30)
-  .attr("width", "1160")
-  .attr("height", "900")
+  .attr("width", 1160)
+  .attr("height", 570)
   .attr("stroke", "white")
   .attr("fill", "green")
   .attr("stroke-width", 2);
 
-var pkCircle = svgContainer
+let pkCircle = svgContainer
   .append("circle")
   .attr("cx", 700)
   .attr("cy", 230)
@@ -34,7 +34,7 @@ var pkCircle = svgContainer
   .attr("fill", "green")
   .attr("stroke-width", 2);
 
-var topMiniReactable = svgContainer
+let topMiniReactable = svgContainer
   .append("rect")
   .attr("x", 615)
   .attr("y", 20)
@@ -44,7 +44,7 @@ var topMiniReactable = svgContainer
   .attr("fill", "green")
   .attr("stroke-width", 2);
 
-var penaltyBox = svgContainer
+let penaltyBox = svgContainer
   .append("rect")
   .attr("x", 340)
   .attr("y", 30)
@@ -54,7 +54,7 @@ var penaltyBox = svgContainer
   .attr("fill", "green")
   .attr("stroke-width", 2);
 
-var goalBox = svgContainer
+let goalBox = svgContainer
   .append("rect")
   .attr("x", 515)
   .attr("y", 30)
@@ -64,13 +64,19 @@ var goalBox = svgContainer
   .attr("fill", "green")
   .attr("stroke-width", 2);
 
+let text = svgContainer
+  .append("text", "Hello")
+  .attr("x", 515)
+  .attr("y", 30)
+  .attr("fill", "black");
+//for the data points
 d3.json("goalData.json", function(data) {
   Object.values(data.players).forEach(player => {
     player.forEach(goal => {
       console.log(goal);
       let x = goal.position[0];
       let y = goal.position[1];
-      var goal1 = svgContainer
+      let goal1 = svgContainer
         .append("circle")
         .attr("cx", x)
         .attr("cy", y)
@@ -83,25 +89,21 @@ d3.json("goalData.json", function(data) {
         })
         .on("mouseout", function(d) {
           goal1.attr("fill", "red").attr("r", 8);
+        })
+        .on("click", function(d) {
+          let penaltyBox = svgContainer
+            .append("rect")
+            .attr("x", 100)
+            .attr("y", 700)
+            .attr("width", 1000)
+            .attr("height", 300)
+            .attr("stroke", "black")
+            .attr("fill", "white")
+            .attr("stroke-width", 2);
         });
     });
   });
 
-  console.log(data.players.MohamedSalah[0].position[0]);
-  console.log(data.players.MohamedSalah[0].position[1]);
-
-  // var goal1 = svgContainer
-  //   .append("circle")
-  //   .attr("cx", data.players.MohamedSalah[0].position[0])
-  //   .attr("cy", data.players.MohamedSalah[0].position[1])
-  //   .attr("r", 5)
-  //   .attr("stroke", "white")
-  //   .attr("fill", "red")
-  //   .attr("stroke-width", 2)
-  //   .on("mouseover", function(d) {
-  //     goal1.attr("fill", "green");
-  //   })
-  //   .on("mouseout", function(d) {
-  //     goal1.attr("fill", "red");
-  //   });
+  // console.log(data.players.MohamedSalah[0].position[0]);
+  // console.log(data.players.MohamedSalah[0].position[1]);
 });
