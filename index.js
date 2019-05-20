@@ -64,11 +64,12 @@ let goalBox = svgContainer
   .attr("fill", "green")
   .attr("stroke-width", 2);
 
-let text = svgContainer
-  .append("text", "Hello")
-  .attr("x", 515)
-  .attr("y", 30)
-  .attr("fill", "black");
+// let svgText = svgContainer
+//   .append("text")
+//   .attr("x", 200)
+//   .attr("y", 200)
+//   .text("circle");
+
 //for the data points
 d3.json("goalData.json", function(data) {
   Object.values(data.players).forEach(player => {
@@ -100,6 +101,36 @@ d3.json("goalData.json", function(data) {
             .attr("stroke", "black")
             .attr("fill", "white")
             .attr("stroke-width", 2);
+
+          let opponent = svgContainer
+            .append("text")
+            .attr("x", 300)
+            .attr("y", 800)
+            .text(goal.opponent);
+
+          let homeVal = "Away";
+
+          if (goal.home === true) {
+            homeVal = "Home";
+          }
+
+          let home = svgContainer
+            .append("text")
+            .attr("x", 300)
+            .attr("y", 820)
+            .text(homeVal);
+
+          let goalTime = svgContainer
+            .append("text")
+            .attr("x", 300)
+            .attr("y", 840)
+            .text(goal.time);
+
+          let gifGoal = svgContainer
+            .append("image")
+            .attr("xlink:href", goal.gif)
+            .attr("x", 450)
+            .attr("y", 720);
         });
     });
   });
