@@ -124,7 +124,8 @@ d3.json("goalData.json", function(data) {
             .append("text")
             .attr("x", 300)
             .attr("y", 840)
-            .text(goal.time);
+            .text(goal.time)
+            .attr("fill", "blue");
 
           let gifGoal = svgContainer
             .append("image")
