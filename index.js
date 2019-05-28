@@ -64,12 +64,6 @@ let goalBox = svgContainer
   .attr("fill", "green")
   .attr("stroke-width", 2);
 
-// let svgText = svgContainer
-//   .append("text")
-//   .attr("x", 200)
-//   .attr("y", 200)
-//   .text("circle");
-
 //for the data points
 d3.json("goalData.json", function(data) {
   Object.values(data.players).forEach(player => {
@@ -81,15 +75,15 @@ d3.json("goalData.json", function(data) {
         .append("circle")
         .attr("cx", x)
         .attr("cy", y)
-        .attr("r", 8)
+        .attr("r", 5)
         .attr("stroke", "white")
         .attr("fill", "red")
         .attr("stroke-width", 2)
         .on("mouseover", function(d) {
-          goal1.attr("fill", "green").attr("r", 10);
+          goal1.attr("fill", "green").attr("r", 8);
         })
         .on("mouseout", function(d) {
-          goal1.attr("fill", "red").attr("r", 8);
+          goal1.attr("fill", "red").attr("r", 5);
         })
         .on("click", function(d) {
           let penaltyBox = svgContainer
@@ -102,9 +96,15 @@ d3.json("goalData.json", function(data) {
             .attr("fill", "white")
             .attr("stroke-width", 2);
 
+          let oppHeader = svgContainer
+            .append("text")
+            .attr("x", 150)
+            .attr("y", 800)
+            .text("Opponent:");
+
           let opponent = svgContainer
             .append("text")
-            .attr("x", 300)
+            .attr("x", 250)
             .attr("y", 800)
             .text(goal.opponent);
 
@@ -116,16 +116,16 @@ d3.json("goalData.json", function(data) {
 
           let home = svgContainer
             .append("text")
-            .attr("x", 300)
+            .attr("x", 250)
             .attr("y", 820)
             .text(homeVal);
 
           let goalTime = svgContainer
             .append("text")
-            .attr("x", 300)
+            .attr("x", 250)
             .attr("y", 840)
             .text(goal.time)
-            .attr("fill", "blue");
+            .attr("fill", "green");
 
           let gifGoal = svgContainer
             .append("image")
@@ -135,7 +135,4 @@ d3.json("goalData.json", function(data) {
         });
     });
   });
-
-  // console.log(data.players.MohamedSalah[0].position[0]);
-  // console.log(data.players.MohamedSalah[0].position[1]);
 });
