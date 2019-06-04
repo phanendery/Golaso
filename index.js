@@ -2,43 +2,43 @@
 let svgContainer = d3
   .select("body")
   .append("svg")
-  .attr("width", 1400)
+  .attr("width", 1500)
   .attr("height", 1200);
 
 let rectangle = svgContainer
   .append("rect")
-  .attr("x", 90)
+  .attr("x", 40)
   .attr("y", 10)
-  .attr("width", 1200)
-  .attr("height", 600)
+  .attr("width", 820)
+  .attr("height", 500)
   .attr("fill", "green")
   .attr("stroke", "black")
   .attr("stroke-width", 2);
 
 let mainOutline = svgContainer
   .append("rect")
-  .attr("x", 110)
+  .attr("x", 50)
   .attr("y", 30)
-  .attr("width", 1160)
-  .attr("height", 570)
+  .attr("width", 800)
+  .attr("height", 470)
   .attr("stroke", "white")
   .attr("fill", "green")
   .attr("stroke-width", 2);
 
 let pkCircle = svgContainer
   .append("circle")
-  .attr("cx", 700)
-  .attr("cy", 230)
-  .attr("r", 150)
+  .attr("cx", 460)
+  .attr("cy", 140)
+  .attr("r", 100)
   .attr("stroke", "white")
   .attr("fill", "green")
   .attr("stroke-width", 2);
 
 let topMiniReactable = svgContainer
   .append("rect")
-  .attr("x", 615)
+  .attr("x", 410)
   .attr("y", 20)
-  .attr("width", 150)
+  .attr("width", 100)
   .attr("height", 10)
   .attr("stroke", "white")
   .attr("fill", "green")
@@ -46,23 +46,47 @@ let topMiniReactable = svgContainer
 
 let penaltyBox = svgContainer
   .append("rect")
-  .attr("x", 340)
+  .attr("x", 237.5)
   .attr("y", 30)
-  .attr("width", 700)
-  .attr("height", 300)
+  .attr("width", 410)
+  .attr("height", 170)
   .attr("stroke", "white")
   .attr("fill", "green")
   .attr("stroke-width", 2);
 
 let goalBox = svgContainer
   .append("rect")
-  .attr("x", 515)
+  .attr("x", 345)
   .attr("y", 30)
-  .attr("width", 350)
-  .attr("height", 100)
+  .attr("width", 220)
+  .attr("height", 60)
   .attr("stroke", "white")
   .attr("fill", "green")
   .attr("stroke-width", 2);
+
+let infoBox = svgContainer
+  .append("rect")
+  .attr("x", 890)
+  .attr("y", 10)
+  .attr("width", 550)
+  .attr("height", 50)
+  .attr("stroke", "white")
+  .attr("fill", "white")
+  .attr("stroke-width", 2);
+
+let infoText = svgContainer
+  .append("text")
+  .attr("x", 928)
+  .attr("y", 30)
+  .text("Welcome to Golaso! This is a interactive soccer field that displays")
+  .attr("font-family", " Century Gothic,CenturyGothic,AppleGothic,sans-serif");
+
+let infoText1 = svgContainer
+  .append("text")
+  .attr("x", 928)
+  .attr("y", 50)
+  .text("the top EPL players goal chart. Click on the points to explore!")
+  .attr("font-family", " Century Gothic,CenturyGothic,AppleGothic,sans-serif");
 
 //for the data points
 d3.json("goalData.json", function(data) {
@@ -86,27 +110,55 @@ d3.json("goalData.json", function(data) {
           goal1.attr("fill", "red").attr("r", 5);
         })
         .on("click", function(d) {
-          let penaltyBox = svgContainer
+          let dataBox = svgContainer
             .append("rect")
-            .attr("x", 100)
-            .attr("y", 700)
-            .attr("width", 1000)
-            .attr("height", 300)
+            .attr("x", 928)
+            .attr("y", 90)
+            .attr("width", 524)
+            .attr("height", 420)
             .attr("stroke", "black")
             .attr("fill", "white")
             .attr("stroke-width", 2);
 
           let oppHeader = svgContainer
             .append("text")
-            .attr("x", 150)
-            .attr("y", 800)
-            .text("Opponent:");
+            .attr("x", 950)
+            .attr("y", 120)
+            .text("Opponent:")
+            .attr(
+              "font-family",
+              " Century Gothic,CenturyGothic,AppleGothic,sans-serif"
+            );
+
+          let playerNameH = svgContainer
+            .append("text")
+            .attr("x", 1200)
+            .attr("y", 120)
+            .text("Player:")
+            .attr(
+              "font-family",
+              " Century Gothic,CenturyGothic,AppleGothic,sans-serif"
+            );
+
+          let playerName = svgContainer
+            .append("text")
+            .attr("x", 1250)
+            .attr("y", 145)
+            .text(goal.name)
+            .attr(
+              "font-family",
+              " Century Gothic,CenturyGothic,AppleGothic,sans-serif"
+            );
 
           let opponent = svgContainer
             .append("text")
-            .attr("x", 250)
-            .attr("y", 800)
-            .text(goal.opponent);
+            .attr("x", 990)
+            .attr("y", 145)
+            .text(goal.opponent)
+            .attr(
+              "font-family",
+              " Century Gothic,CenturyGothic,AppleGothic,sans-serif"
+            );
 
           let homeVal = "Away";
 
@@ -116,22 +168,40 @@ d3.json("goalData.json", function(data) {
 
           let home = svgContainer
             .append("text")
-            .attr("x", 250)
-            .attr("y", 820)
-            .text(homeVal);
+            .attr("x", 950)
+            .attr("y", 165)
+            .text(homeVal)
+            .attr(
+              "font-family",
+              " Century Gothic,CenturyGothic,AppleGothic,sans-serif"
+            );
+
+          let time = svgContainer
+            .append("text")
+            .attr("x", 950)
+            .attr("y", 190)
+            .text("Time:")
+            .attr(
+              "font-family",
+              " Century Gothic,CenturyGothic,AppleGothic,sans-serif"
+            );
 
           let goalTime = svgContainer
             .append("text")
-            .attr("x", 250)
-            .attr("y", 840)
+            .attr("x", 990)
+            .attr("y", 210)
             .text(goal.time)
-            .attr("fill", "green");
+            .attr("fill", "green")
+            .attr(
+              "font-family",
+              " Century Gothic,CenturyGothic,AppleGothic,sans-serif"
+            );
 
           let gifGoal = svgContainer
             .append("image")
             .attr("xlink:href", goal.gif)
-            .attr("x", 450)
-            .attr("y", 720);
+            .attr("x", 950)
+            .attr("y", 230);
         });
     });
   });
