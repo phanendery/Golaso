@@ -199,6 +199,206 @@
         "position": [440, 120],
         "gif": "https://media.giphy.com/media/fvrPkcazRwzQGj8hWd/giphy.gif"
       }
+    ],
+    "SadioMane": [
+      {
+        "id": 1,
+        "name": "Sadio Mane",
+        "opponent": "West Ham United",
+        "time": 47,
+        "home": true,
+        "position": [420, 50],
+        "gif": "https://media.giphy.com/media/cjR2gOWNxKhJxcNAES/giphy.gif"
+      },
+      {
+        "id": 2,
+        "name": "Sadio Mane",
+        "opponent": "West Ham United",
+        "time": 53,
+        "home": true,
+        "position": [442, 150],
+        "gif": "https://i.makeagif.com/media/6-04-2019/EbR10_.gif"
+      },
+      {
+        "id": 3,
+        "name": "Sadio Mane",
+        "opponent": "Crystal Palace",
+        "time": 93,
+        "home": false,
+        "position": [565, 100],
+        "gif": "https://media.giphy.com/media/TjRklYSXDYG0uTr2AQ/giphy.gif"
+      },
+      {
+        "id": 4,
+        "name": "Sadio Mane",
+        "opponent": "Leicester City",
+        "time": 10,
+        "home": false,
+        "position": [465, 110],
+        "gif": "https://media.giphy.com/media/cLSmhmBDi4IwFGjCyD/giphy.gif"
+      },
+      {
+        "id": 5,
+        "name": "Sadio Mane",
+        "opponent": "Cardiff City",
+        "time": 66,
+        "home": true,
+        "position": [355, 130],
+        "gif": "https://media.giphy.com/media/SrzFGdns1agWwLcLVA/giphy.gif"
+      },
+      {
+        "id": 6,
+        "name": "Sadio Mane",
+        "opponent": "Cardiff City",
+        "time": 87,
+        "home": true,
+        "position": [515, 130],
+        "gif": "https://media.giphy.com/media/mG2iQfDZq0R9hNPBoz/giphy.gif"
+      },
+      {
+        "id": 7,
+        "name": "Sadio Mane",
+        "opponent": "Manchester United",
+        "time": 24,
+        "home": true,
+        "position": [475, 110],
+        "gif": "https://media.giphy.com/media/Qtuqeq1Zq7D27Wb9TG/giphy.gif"
+      },
+      {
+        "id": 8,
+        "name": "Sadio Mane",
+        "opponent": "Arsenal",
+        "time": 32,
+        "home": true,
+        "position": [525, 100],
+        "gif": "https://media.giphy.com/media/dY13mJedCAhbZXbHlw/giphy.gif"
+      },
+      {
+        "id": 9,
+        "name": "Sadio Mane",
+        "opponent": "Crystal Place",
+        "time": 93,
+        "home": true,
+        "position": [330, 80],
+        "gif": "https://media.giphy.com/media/ekA5hctpYs3wwQFIai/giphy.gif"
+      },
+      {
+        "id": 10,
+        "name": "Sadio Mane",
+        "opponent": "Leicester City",
+        "time": 3,
+        "home": true,
+        "position": [420, 130],
+        "gif": "https://media.giphy.com/media/cl8V78PBTk3wqfxT0f/giphy.gif"
+      },
+      {
+        "id": 11,
+        "name": "Sadio Mane",
+        "opponent": "West Ham United",
+        "time": 22,
+        "home": false,
+        "position": [500, 99],
+        "gif": "https://media.giphy.com/media/gkWDFmvu691SkCpglh/giphy.gif"
+      },
+      {
+        "id": 12,
+        "name": "Sadio Mane",
+        "opponent": "Bournemouth",
+        "time": 24,
+        "home": true,
+        "position": [510, 102],
+        "gif": "https://media.giphy.com/media/iF1AuWToULzeBZUzvQ/giphy.gif"
+      },
+      {
+        "id": 13,
+        "name": "Sadio Mane",
+        "opponent": "Watford",
+        "time": 9,
+        "home": true,
+        "position": [512, 110],
+        "gif": "https://media.giphy.com/media/XEOKxa92z30qFaPDXk/giphy.gif"
+      },
+      {
+        "id": 14,
+        "name": "Sadio Mane",
+        "opponent": "Watford",
+        "time": 20,
+        "home": true,
+        "position": [475, 139],
+        "gif": "https://media.giphy.com/media/RH7yH6s0bFPXntA1Ov/giphy.gif"
+      },
+      {
+        "id": 15,
+        "name": "Sadio Mane",
+        "opponent": "Burnley",
+        "time": 29,
+        "home": true,
+        "position": [390, 140],
+        "gif": "https://media.giphy.com/media/mG274VYvfyYgN0XOHg/giphy.gif"
+      },
+      {
+        "id": 16,
+        "name": "Sadio Mane",
+        "opponent": "Burnley",
+        "time": 93,
+        "home": true,
+        "position": [335, 110],
+        "gif": "https://media.giphy.com/media/XcdNYt388NYaaZfT0N/giphy.gif"
+      },
+      {
+        "id": 17,
+        "name": "Sadio Mane",
+        "opponent": "Fulham",
+        "time": 26,
+        "home": false,
+        "position": [480, 100],
+        "gif": "https://media.giphy.com/media/RiQM2sSz6nCMiT6ZKb/giphy.gif"
+      },
+      {
+        "id": 18,
+        "name": "Sadio Mane",
+        "opponent": "Chelsea",
+        "time": 53,
+        "home": true,
+        "position": [410, 50],
+        "gif": "https://media.giphy.com/media/YS5x24Nc4Gc4NHkcTh/giphy.gif"
+      },
+      {
+        "id": 19,
+        "name": "Sadio Mane",
+        "opponent": "Huddersfield Town",
+        "time": 23,
+        "home": true,
+        "position": [380, 100],
+        "gif": "https://media.giphy.com/media/f4UbWL2hsv28CeYWHt/giphy.gif"
+      },
+      {
+        "id": 20,
+        "name": "Sadio Mane",
+        "opponent": "Huddersfield Town",
+        "time": 66,
+        "home": true,
+        "position": [380, 100],
+        "gif": "https://media.giphy.com/media/TFOmRsZ5JtYpXhLAqj/giphy.gif"
+      },
+      {
+        "id": 21,
+        "name": "Sadio Mane",
+        "opponent": "Wolverhampton Wanderers",
+        "time": 17,
+        "home": true,
+        "position": [450, 100],
+        "gif": "https://media.giphy.com/media/LOoD846jry3jwa7lbx/giphy.gif"
+      },
+      {
+        "id": 22,
+        "name": "Sadio Mane",
+        "opponent": "Wolverhampton Wanderers",
+        "time": 81,
+        "home": true,
+        "position": [420, 105],
+        "gif": "https://media.giphy.com/media/YR7kuiK9117yRZs5Y1/giphy.gif"
+      }
     ]
   }
 }

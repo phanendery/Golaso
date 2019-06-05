@@ -92,7 +92,11 @@ let infoText1 = svgContainer
 d3.json("goalData.json", function(data) {
   Object.values(data.players).forEach(player => {
     player.forEach(goal => {
-      console.log(goal);
+      // console.log(goal);
+      let color = "red";
+      if (goal.name === "Sadio Mane") {
+        color = "blue";
+      }
       let x = goal.position[0];
       let y = goal.position[1];
       let goal1 = svgContainer
@@ -101,13 +105,13 @@ d3.json("goalData.json", function(data) {
         .attr("cy", y)
         .attr("r", 5)
         .attr("stroke", "white")
-        .attr("fill", "red")
+        .attr("fill", color)
         .attr("stroke-width", 2)
         .on("mouseover", function(d) {
           goal1.attr("fill", "green").attr("r", 8);
         })
         .on("mouseout", function(d) {
-          goal1.attr("fill", "red").attr("r", 5);
+          goal1.attr("fill", color).attr("r", 5);
         })
         .on("click", function(d) {
           let dataBox = svgContainer
