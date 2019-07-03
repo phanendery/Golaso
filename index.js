@@ -8,9 +8,9 @@ let svgContainer = d3
 let rectangle = svgContainer
   .append("rect")
   .attr("x", 40)
-  .attr("y", 10)
+  .attr("y", 40)
   .attr("width", 820)
-  .attr("height", 500)
+  .attr("height", 530)
   .attr("fill", "green")
   .attr("stroke", "black")
   .attr("stroke-width", 2);
@@ -18,9 +18,9 @@ let rectangle = svgContainer
 let mainOutline = svgContainer
   .append("rect")
   .attr("x", 50)
-  .attr("y", 30)
+  .attr("y", 60)
   .attr("width", 800)
-  .attr("height", 470)
+  .attr("height", 500)
   .attr("stroke", "white")
   .attr("fill", "green")
   .attr("stroke-width", 2);
@@ -28,7 +28,7 @@ let mainOutline = svgContainer
 let pkCircle = svgContainer
   .append("circle")
   .attr("cx", 460)
-  .attr("cy", 140)
+  .attr("cy", 170)
   .attr("r", 100)
   .attr("stroke", "white")
   .attr("fill", "green")
@@ -37,7 +37,7 @@ let pkCircle = svgContainer
 let topMiniReactable = svgContainer
   .append("rect")
   .attr("x", 410)
-  .attr("y", 20)
+  .attr("y", 50)
   .attr("width", 100)
   .attr("height", 10)
   .attr("stroke", "white")
@@ -47,7 +47,7 @@ let topMiniReactable = svgContainer
 let penaltyBox = svgContainer
   .append("rect")
   .attr("x", 237.5)
-  .attr("y", 30)
+  .attr("y", 60)
   .attr("width", 410)
   .attr("height", 170)
   .attr("stroke", "white")
@@ -57,7 +57,7 @@ let penaltyBox = svgContainer
 let goalBox = svgContainer
   .append("rect")
   .attr("x", 345)
-  .attr("y", 30)
+  .attr("y", 60)
   .attr("width", 220)
   .attr("height", 60)
   .attr("stroke", "white")
@@ -67,7 +67,7 @@ let goalBox = svgContainer
 let infoBox = svgContainer
   .append("rect")
   .attr("x", 890)
-  .attr("y", 10)
+  .attr("y", 40)
   .attr("width", 550)
   .attr("height", 50)
   .attr("stroke", "white")
@@ -132,7 +132,8 @@ d3.json("goalData.json", function(data) {
             .attr(
               "font-family",
               " Century Gothic,CenturyGothic,AppleGothic,sans-serif"
-            );
+            )
+            .attr("font-size", 32);
 
           let playerNameH = svgContainer
             .append("text")
@@ -204,8 +205,8 @@ d3.json("goalData.json", function(data) {
           let gifGoal = svgContainer
             .append("image")
             .attr("xlink:href", goal.gif)
-            .attr("x", 950)
-            .attr("y", 230);
+            .attr("x", 40)
+            .attr("y", 300);
         });
     });
   });
