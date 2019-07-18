@@ -76,14 +76,14 @@ let infoBox = svgContainer
 
 let infoText = svgContainer
   .append("text")
-  .attr("x", 40)
+  .attr("x", 80)
   .attr("y", 30)
   .text("Welcome to Golaso! This is a interactive soccer field that displays")
   .attr("font-family", " Century Gothic,CenturyGothic,AppleGothic,sans-serif");
 
 let infoText1 = svgContainer
   .append("text")
-  .attr("x", 40)
+  .attr("x", 80)
   .attr("y", 50)
   .text("the top EPL players goal chart. Click on the points to explore!")
   .attr("font-family", " Century Gothic,CenturyGothic,AppleGothic,sans-serif");
@@ -206,6 +206,23 @@ d3.json("goalData.json", function(data) {
               " Century Gothic,CenturyGothic,AppleGothic,sans-serif"
             )
             .attr("font-size", 14);
+          
+          let playerPic = svgContainer
+            .append("image")
+            .attr("xlink:href"," https://www.dw.com/image/43516410_303.jpg")
+            .attr("x", 510)
+            .attr("y", 510)
+            .attr("height",100)
+            .attr("width", 200);
+
+          let teamPic = svgContainer
+            .append("image")
+            .attr("xlink:href", "https://upload.wikimedia.org/wikipedia/hif/b/bd/Liverpool_FC.png")
+            .attr("x", 680)
+            .attr("y", 500)
+            .attr("height", 100)
+            .attr("width", 200);
+
 
           let gifGoal = svgContainer
             .append("image")
