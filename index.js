@@ -206,23 +206,35 @@ d3.json("goalData.json", function(data) {
               " Century Gothic,CenturyGothic,AppleGothic,sans-serif"
             )
             .attr("font-size", 14);
-          
-          let playerPic = svgContainer
+
+          let salah = " https://www.dw.com/image/43516410_303.jpg";
+          let mane =
+            "https://d3j2s6hdd6a7rg.cloudfront.net/v2/uploads/media/default/0001/84/thumb_83750_default_news_size_5.jpeg";
+          let picLink = "";
+          if (goal.name === "Mohamed Salah") {
+            picLink = salah;
+          } else {
+            picLink = mane;
+          }
+
+          let playerpic = svgContainer
             .append("image")
-            .attr("xlink:href"," https://www.dw.com/image/43516410_303.jpg")
+            .attr("xlink:href", picLink)
             .attr("x", 510)
             .attr("y", 510)
-            .attr("height",100)
+            .attr("height", 100)
             .attr("width", 200);
 
-          let teamPic = svgContainer
+          let liverpool = svgContainer
             .append("image")
-            .attr("xlink:href", "https://upload.wikimedia.org/wikipedia/hif/b/bd/Liverpool_FC.png")
+            .attr(
+              "xlink:href",
+              "https://upload.wikimedia.org/wikipedia/hif/b/bd/Liverpool_FC.png"
+            )
             .attr("x", 680)
             .attr("y", 500)
             .attr("height", 100)
             .attr("width", 200);
-
 
           let gifGoal = svgContainer
             .append("image")
