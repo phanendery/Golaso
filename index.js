@@ -2,8 +2,8 @@
 let svgContainer = d3
   .select("body")
   .append("svg")
-  .attr("width", 1500)
-  .attr("height", 1200);
+  .attr("width", 1100)
+  .attr("height", 1100);
 
 let rectangle = svgContainer
   .append("rect")
@@ -92,7 +92,6 @@ let infoText1 = svgContainer
 d3.json("goalData.json", function(data) {
   Object.values(data.players).forEach(player => {
     player.forEach(goal => {
-      // console.log(goal);
       let color = "red";
       if (goal.name === "Sadio Mane") {
         color = "blue";
@@ -116,54 +115,57 @@ d3.json("goalData.json", function(data) {
         .on("click", function(d) {
           let dataBox = svgContainer
             .append("rect")
-            .attr("x", 928)
-            .attr("y", 90)
-            .attr("width", 524)
-            .attr("height", 420)
+            .attr("x", 521)
+            .attr("y", 301)
+            .attr("width", 339)
+            .attr("height", 269)
             .attr("stroke", "black")
             .attr("fill", "white")
             .attr("stroke-width", 2);
 
           let oppHeader = svgContainer
             .append("text")
-            .attr("x", 950)
-            .attr("y", 120)
+            .attr("x", 550)
+            .attr("y", 350)
             .text("Opponent:")
             .attr(
               "font-family",
               " Century Gothic,CenturyGothic,AppleGothic,sans-serif"
             )
-            .attr("font-size", 32);
+            .attr("font-size", 14);
 
           let playerNameH = svgContainer
             .append("text")
-            .attr("x", 1200)
-            .attr("y", 120)
+            .attr("x", 700)
+            .attr("y", 350)
             .text("Player:")
             .attr(
               "font-family",
               " Century Gothic,CenturyGothic,AppleGothic,sans-serif"
-            );
+            )
+            .attr("font-size", 14);
 
           let playerName = svgContainer
             .append("text")
-            .attr("x", 1250)
-            .attr("y", 145)
+            .attr("x", 720)
+            .attr("y", 370)
             .text(goal.name)
             .attr(
               "font-family",
               " Century Gothic,CenturyGothic,AppleGothic,sans-serif"
-            );
+            )
+            .attr("font-size", 14);
 
           let opponent = svgContainer
             .append("text")
-            .attr("x", 990)
-            .attr("y", 145)
+            .attr("x", 570)
+            .attr("y", 370)
             .text(goal.opponent)
             .attr(
               "font-family",
               " Century Gothic,CenturyGothic,AppleGothic,sans-serif"
-            );
+            )
+            .attr("font-size", 14);
 
           let homeVal = "Away";
 
@@ -173,34 +175,37 @@ d3.json("goalData.json", function(data) {
 
           let home = svgContainer
             .append("text")
-            .attr("x", 950)
-            .attr("y", 165)
+            .attr("x", 550)
+            .attr("y", 410)
             .text(homeVal)
             .attr(
               "font-family",
               " Century Gothic,CenturyGothic,AppleGothic,sans-serif"
-            );
+            )
+            .attr("font-size", 14);
 
           let time = svgContainer
             .append("text")
-            .attr("x", 950)
-            .attr("y", 190)
+            .attr("x", 700)
+            .attr("y", 410)
             .text("Time:")
             .attr(
               "font-family",
               " Century Gothic,CenturyGothic,AppleGothic,sans-serif"
-            );
+            )
+            .attr("font-size", 14);
 
           let goalTime = svgContainer
             .append("text")
-            .attr("x", 990)
-            .attr("y", 210)
+            .attr("x", 720)
+            .attr("y", 430)
             .text(goal.time)
             .attr("fill", "green")
             .attr(
               "font-family",
               " Century Gothic,CenturyGothic,AppleGothic,sans-serif"
-            );
+            )
+            .attr("font-size", 14);
 
           let gifGoal = svgContainer
             .append("image")
