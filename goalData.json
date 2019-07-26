@@ -210,15 +210,7 @@
         "position": [420, 120],
         "gif": "https://media.giphy.com/media/cjR2gOWNxKhJxcNAES/giphy.gif"
       },
-      {
-        "id": 2,
-        "name": "Sadio Mane",
-        "opponent": "West Ham United",
-        "time": 53,
-        "home": true,
-        "position": [442, 220],
-        "gif": "https://i.makeagif.com/media/6-04-2019/EbR10_.gif"
-      },
+
       {
         "id": 3,
         "name": "Sadio Mane",

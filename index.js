@@ -209,13 +209,17 @@ d3.json("goalData.json", function(data) {
 
           let salah = " https://www.dw.com/image/43516410_303.jpg";
           let mane =
-            "https://d3j2s6hdd6a7rg.cloudfront.net/v2/uploads/media/default/0001/84/thumb_83750_default_news_size_5.jpeg";
+            "https://fadeawayworld.net/wp-content/uploads/2019/03/1134890328.jpg.0.jpg"
           let picLink = "";
           if (goal.name === "Mohamed Salah") {
             picLink = salah;
           } else {
             picLink = mane;
           }
+          
+          
+
+
 
           let playerpic = svgContainer
             .append("image")
