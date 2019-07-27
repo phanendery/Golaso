@@ -209,25 +209,39 @@ d3.json("goalData.json", function(data) {
 
           let salah = " https://www.dw.com/image/43516410_303.jpg";
           let mane =
-            "https://fadeawayworld.net/wp-content/uploads/2019/03/1134890328.jpg.0.jpg"
+            "https://fadeawayworld.net/wp-content/uploads/2019/03/1134890328.jpg.0.jpg";
           let picLink = "";
           if (goal.name === "Mohamed Salah") {
             picLink = salah;
           } else {
             picLink = mane;
           }
-          
-          
 
+          if (picLink === salah) {
+            let playerpic = svgContainer
+              .append("image")
+              .attr("xlink:href", picLink)
+              .attr("x", 510)
+              .attr("y", 510)
+              .attr("height", 100)
+              .attr("width", 200);
+          } else {
+            let playerpic = svgContainer
+              .append("image")
+              .attr("xlink:href", picLink)
+              .attr("x", 495)
+              .attr("y", 510)
+              .attr("height", 100)
+              .attr("width", 200);
+          }
 
-
-          let playerpic = svgContainer
-            .append("image")
-            .attr("xlink:href", picLink)
-            .attr("x", 510)
-            .attr("y", 510)
-            .attr("height", 100)
-            .attr("width", 200);
+          // let playerpic = svgContainer
+          //   .append("image")
+          //   .attr("xlink:href", picLink)
+          //   .attr("x", 510)
+          //   .attr("y", 510)
+          //   .attr("height", 100)
+          //   .attr("width", 200);
 
           let liverpool = svgContainer
             .append("image")
