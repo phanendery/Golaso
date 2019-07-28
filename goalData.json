@@ -94,7 +94,7 @@
       {
         "id": 11,
         "name": "Mohamed Salah",
-        "opponent": "Wolverhampton Wanderers",
+        "opponent": "Wolverhampton",
         "time": 18,
         "home": false,
         "position": [470, 170],
@@ -376,7 +376,7 @@
       {
         "id": 21,
         "name": "Sadio Mane",
-        "opponent": "Wolverhampton Wanderers",
+        "opponent": "Wolverhampton",
         "time": 17,
         "home": true,
         "position": [450, 170],
@@ -385,7 +385,7 @@
       {
         "id": 22,
         "name": "Sadio Mane",
-        "opponent": "Wolverhampton Wanderers",
+        "opponent": "Wolverhampton",
         "time": 81,
         "home": true,
         "position": [420, 175],

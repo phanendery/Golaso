@@ -2,8 +2,8 @@
 let svgContainer = d3
   .select("body")
   .append("svg")
-  .attr("width", 1100)
-  .attr("height", 1100);
+  .attr("width", 1400)
+  .attr("height", 700);
 
 let rectangle = svgContainer
   .append("rect")
@@ -87,6 +87,52 @@ let infoText1 = svgContainer
   .attr("y", 50)
   .text("the top EPL players goal chart. Click on the points to explore!")
   .attr("font-family", " Century Gothic,CenturyGothic,AppleGothic,sans-serif");
+
+let ronaldo = svgContainer
+  .append("image")
+  .attr(
+    "xlink:href",
+    "https://images-na.ssl-images-amazon.com/images/I/81rogEnFK4L._SY679_.jpg"
+  )
+  .attr("x", 862)
+  .attr("y", 67)
+  .attr("height", 400)
+  .attr("width", 250);
+
+let messi = svgContainer
+  .append("image")
+  .attr(
+    "xlink:href",
+    "https://cdn.shopify.com/s/files/1/0747/3829/products/mHP1968_1024x1024.jpg?v=1511950575"
+  )
+  .attr("x", 1112)
+  .attr("y", 66)
+  .attr("height", 400)
+  .attr("width", 250);
+
+let aguero = svgContainer
+  .append("image")
+  .attr(
+    "xlink:href",
+    "https://resources.premierleague.com/photos/2019/03/07/81966fb7-9cbd-4e77-8ed8-b221d814ef31/Aguero.jpg?width=932&height=620"
+  )
+  .attr("x", 862)
+  .attr("y", 328)
+  .attr("height", 400)
+  .attr("width", 250);
+
+let rashford = svgContainer
+  .append("image")
+  .attr(
+    "xlink:href",
+    "https://img.estadao.com.br/resources/jpg/3/2/1508772607123.jpg"
+  )
+  .attr("x", 1112)
+  .attr("y", 328)
+  .attr("height", 400)
+  .attr("width", 250);
+
+
 
 //for the data points
 d3.json("goalData.json", function(data) {
@@ -234,14 +280,6 @@ d3.json("goalData.json", function(data) {
               .attr("height", 100)
               .attr("width", 200);
           }
-
-          // let playerpic = svgContainer
-          //   .append("image")
-          //   .attr("xlink:href", picLink)
-          //   .attr("x", 510)
-          //   .attr("y", 510)
-          //   .attr("height", 100)
-          //   .attr("width", 200);
 
           let liverpool = svgContainer
             .append("image")
