@@ -76,17 +76,13 @@ let infoBox = svgContainer
 
 let infoText = svgContainer
   .append("text")
-  .attr("x", 80)
-  .attr("y", 30)
-  .text("Welcome to Golaso! This is a interactive soccer field that displays")
-  .attr("font-family", " Century Gothic,CenturyGothic,AppleGothic,sans-serif");
-
-let infoText1 = svgContainer
-  .append("text")
-  .attr("x", 80)
-  .attr("y", 50)
-  .text("the top EPL players goal chart. Click on the points to explore!")
-  .attr("font-family", " Century Gothic,CenturyGothic,AppleGothic,sans-serif");
+  .attr("x", 125)
+  .attr("y", 45)
+  .text(
+    "Welcome to Golaso! This is a interactive soccer field that displays the top soccer players' goals. Click on the points to explore!"
+  )
+  .attr("font-family", "Darker Grotesque")
+  .attr("font-size", 25);
 
 let ronaldo = svgContainer
   .append("image")
@@ -132,8 +128,6 @@ let rashford = svgContainer
   .attr("height", 400)
   .attr("width", 250);
 
-
-
 //for the data points
 d3.json("goalData.json", function(data) {
   Object.values(data.players).forEach(player => {
@@ -166,7 +160,7 @@ d3.json("goalData.json", function(data) {
             .attr("width", 339)
             .attr("height", 269)
             .attr("stroke", "black")
-            .attr("fill", "white")
+            .attr("fill", "white") //white LOOK HERE
             .attr("stroke-width", 2);
 
           let oppHeader = svgContainer

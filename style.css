@@ -1,5 +1,9 @@
 .top-header {
-  padding-left: 30px;
-  padding-top: 100px;
-  color: blue;
+  text-align: center;
+  color: black;
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 50px;
+  margin: 0px;
 }
+
+
