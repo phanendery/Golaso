@@ -2,7 +2,7 @@
   text-align: center;
   color: black;
   font-family: "Darker Grotesque", sans-serif;
-  font-size: 50px;
+  font-size: 40px;
   margin: 0px;
 }
 
@@ -10,4 +10,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.bottomLinks {
+  .img{
+    font-size: 40px;
+  }
 }

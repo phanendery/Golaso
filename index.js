@@ -4,7 +4,8 @@ const rescale = () => {
   const HEIGHT = 700;
   const scale = Math.min(
     window.innerWidth / WIDTH,
-    (window.innerHeight - HEIGHT_OF_YOUR_LOGO_FIGURE_THIS_OUT) / HEIGHT
+    // window.innerHeight / HEIGHT
+    (window.innerHeight - 68) / HEIGHT
   );
   svg.style.cssText = `transform: scale(${scale});`;
 };
