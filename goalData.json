@@ -13,7 +13,7 @@
       {
         "id": 2,
         "name": "Mohamed Salah",
-        "opponent": "Brighton & Hove Albion",
+        "opponent": "Brighton",
         "time": 23,
         "home": true,
         "position": [590, 250],
@@ -120,8 +120,9 @@
       },
       {
         "id": 14,
+    
         "name": "Mohamed Salah",
-        "opponent": "Brighton & Hove Albion",
+        "opponent": "Brighton",
         "time": 50,
         "home": false,
         "position": [462, 210],

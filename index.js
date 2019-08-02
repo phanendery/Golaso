@@ -1,3 +1,16 @@
+const rescale = () => {
+  const svg = document.querySelector("svg");
+  const WIDTH = 1400;
+  const HEIGHT = 700;
+  const scale = Math.min(
+    window.innerWidth / WIDTH,
+    (window.innerHeight - HEIGHT_OF_YOUR_LOGO_FIGURE_THIS_OUT) / HEIGHT
+  );
+  svg.style.cssText = `transform: scale(${scale});`;
+};
+window.addEventListener("resize", rescale);
+window.addEventListener("DOMContentLoaded", rescale);
+
 //Make an SVG Container
 let svgContainer = d3
   .select("body")
@@ -295,3 +308,5 @@ d3.json("goalData.json", function(data) {
     });
   });
 });
+
+rescale();
