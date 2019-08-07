@@ -10,10 +10,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* background-image: url("grass.jpg"); */
 }
 
 .bottomLinks {
-  .img{
-    font-size: 40px;
-  }
+  font-size: 40px;
 }
