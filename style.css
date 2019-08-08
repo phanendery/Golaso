@@ -9,8 +9,8 @@
 body {
   display: flex;
   flex-direction: column;
-  align-items: left;
-  /* background-image: url("grass.jpg"); */
+  align-items: center;
+  background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/rbGMAGytlGjahhgrii/videoblocks-soccer-ball-rotates-against-the-stadium-background-in-the-left-side-with-space-for-title-logo-or-score-background-4k-ultra-hd-football-seamless-looping-3d-animation_bommdq9xtg_thumbnail-full01.png");
 }
 
 .bottomLinks {
@@ -23,5 +23,5 @@ body {
   position: relative;
   bottom: 500px;
   width: 200px;
-  left: 865px;
+  left: 400px;
 }
