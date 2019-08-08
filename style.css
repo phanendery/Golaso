@@ -9,10 +9,19 @@
 body {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   /* background-image: url("grass.jpg"); */
 }
 
 .bottomLinks {
   font-size: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.playerSelection{
+  position: relative;
+  bottom: 500px;
+  width: 200px;
+  left: 865px;
 }
