@@ -94,7 +94,15 @@ let infoText3 = svgContainer
   .append("text")
   .attr("x", 840)
   .attr("y", 80)
-  .text("players' goals. Select a player!!")
+  .text("players' goals. Select a player and then")
+  .attr("font-family", "Darker Grotesque")
+  .attr("font-size", 18);
+
+let infoText4 = svgContainer
+  .append("text")
+  .attr("x", 840)
+  .attr("y", 100)
+  .text("explore the field!")
   .attr("font-family", "Darker Grotesque")
   .attr("font-size", 18);
 

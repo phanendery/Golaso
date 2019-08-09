@@ -18,10 +18,21 @@ body {
   display: flex;
   align-items: center;
 }
+.fa-github:before {
+  color: black;
+}
 
-.playerSelection{
+.fa-linkedin:before {
+  color: black;
+}
+
+.fa-angellist:before {
+  color: black;
+}
+
+.playerSelection {
   position: relative;
-  bottom: 500px;
+  bottom: 490px;
   width: 200px;
   left: 400px;
 }
