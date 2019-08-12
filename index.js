@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
   selector = document.getElementById("player"); //only works after the page loads
   plotData();
   selector.onchange = plotData;
-  console.log(selector.value);
 });
 
 //Make an SVG Container
@@ -134,7 +133,6 @@ const plotData = () => {
             .on("click", function(d) {
               let dataBox = svgContainer
                 .append("rect")
-                // .append("pattern")
                 .attr("x", 481)
                 .attr("y", 341)
                 .attr("width", 339)
@@ -142,7 +140,26 @@ const plotData = () => {
                 .attr("stroke", "black")
                 .attr("fill", "#b2ebab") //CHANGE DATABOX BACKGROUND
                 .attr("stroke-width", 2);
-              // .attr("stroke-dasharray", 4);
+
+              let playerDescription = svgContainer
+                .append("rect")
+
+                .attr("x", 840) //345
+                .attr("y", 150)
+                .attr("width", 258)
+                .attr("height", 500)
+                .attr("stroke", "black")
+                .attr("fill", "white")
+                .attr("stroke-width", 2);
+
+              let playerText = svgContainer
+                .append("foreignObject")
+                .text(playersD[goal.name])
+                .attr("id", "description")
+                .attr("x", 845)
+                .attr("y", 165)
+                .attr("width", 250)
+                .attr("height", 480);
 
               let oppHeader = svgContainer
                 .append("text")
@@ -212,9 +229,6 @@ const plotData = () => {
                 .attr("font-family", "Comfortaa, cursive")
                 .attr("font-size", 14);
 
-              // let playerDescription = svgContainer
-              // .append("")
-
               let salah = " https://www.dw.com/image/43516410_303.jpg";
               let mane =
                 "https://fadeawayworld.net/wp-content/uploads/2019/03/1134890328.jpg.0.jpg";
@@ -264,48 +278,14 @@ const plotData = () => {
       });
     });
   });
+  d3.select("svg > circle.plotPoint").dispatch("click");
 };
 
-// let ronaldo = svgContainer
-//   .append("image")
-//   .attr(
-//     "xlink:href",
-//     "https://images-na.ssl-images-amazon.com/images/I/81rogEnFK4L._SY679_.jpg"
-//   )
-//   .attr("x", 862)
-//   .attr("y", 67)
-//   .attr("height", 400)
-//   .attr("width", 250);
 
-// let messi = svgContainer
-//   .append("image")
-//   .attr(
-//     "xlink:href",
-//     "https://cdn.shopify.com/s/files/1/0747/3829/products/mHP1968_1024x1024.jpg?v=1511950575"
-//   )
-//   .attr("x", 1112)
-//   .attr("y", 66)
-//   .attr("height", 400)
-//   .attr("width", 250);
 
-// let aguero = svgContainer
-//   .append("image")
-//   .attr(
-//     "xlink:href",
-//     "https://resources.premierleague.com/photos/2019/03/07/81966fb7-9cbd-4e77-8ed8-b221d814ef31/Aguero.jpg?width=932&height=620"
-//   )
-//   .attr("x", 862)
-//   .attr("y", 328)
-//   .attr("height", 400)
-//   .attr("width", 250);
-
-// let rashford = svgContainer
-//   .append("image")
-//   .attr(
-//     "xlink:href",
-//     "https://img.estadao.com.br/resources/jpg/3/2/1508772607123.jpg"
-//   )
-//   .attr("x", 1112)
-//   .attr("y", 328)
-//   .attr("height", 400)
-//   .attr("width", 250);
+playersD = {
+  "Sadio Mane":
+    "Sadio Mané (born 10 April 1992) is a Senegalese professional footballer who plays as a winger for Premier League club Liverpool and the Senegal national team. Having begun his career with Metz in France, he transferred to Red Bull Salzburg in 2012. After winning the Austrian Bundesliga and Austrian Cup in 2014, he was signed by Southampton.In 2015, Mané set a new Premier League record for the fastest hat - trick when he scored three times in 176 seconds during a 6–1 win over Aston Villa.[4] He transferred to Liverpool in 2016 for a fee of £34 million, making him the most expensive African player in history at that time.[5][6] Since joining Liverpool, Mané among other achievements scored in the 2018 UEFA Champions League Final.The following season he was joint recipient of the Premier League Golden Boot with 22 goals, and was part of the Liverpool team that won the 2019 UEFA Champions League Final.",
+  "Mohamed Salah":
+    "Mohamed Salah Hamed Mahrous Ghaly (Arabic: محمد صلاح حامد محروس غالى‎ Egyptian Arabic pronunciation: [mæˈħam.mæd sˤɑˈlɑːħ ˈɣæːli]; born 15 June 1992) is an Egyptian professional footballer who plays as a forward for Premier League club Liverpool and the Egypt national team. Considered one of the best players in the world, he is known for his finishing, dribbling, and speed.[6][7]Salah started his senior career with Cairo club El Mokawloon[8] in the Egyptian Premier League in 2010, departing shortly thereafter to join Basel for an undisclosed fee.In Switzerland, he starred as he helped the club win the league in his debut season, winning the SAFP Golden Player Award in the process.Salah's performances then attracted Premier League side Chelsea, and he joined the club for a £11 million fee in 2014. However, he was used sparingly in his debut season and was allowed to leave on loan to Serie A clubs Fiorentina and Roma, with the latter eventually signing him permanently for €15 million."
+};
