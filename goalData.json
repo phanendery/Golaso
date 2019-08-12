@@ -7,7 +7,7 @@
         "opponent": "West Ham United",
         "time": 19,
         "home": true,
-        "position": [485, 125],
+        "position": [485, 85],
         "gif": "https://media.giphy.com/media/dudPa6PNBMXLemN9sP/giphy.gif"
       },
       {
@@ -16,7 +16,7 @@
         "opponent": "Brighton",
         "time": 23,
         "home": true,
-        "position": [590, 250],
+        "position": [590, 210],
         "gif": "https://media.giphy.com/media/keZvRChPAC3NNSOHXU/giphy.gif"
       },
       {
@@ -25,7 +25,7 @@
         "opponent": "Southampton",
         "time": 48,
         "home": true,
-        "position": [500, 110],
+        "position": [500, 70],
         "gif": "https://media.giphy.com/media/Y1vrPfZFCO2KQjGOIK/giphy.gif"
       },
       {
@@ -34,7 +34,7 @@
         "opponent": "Huddersfield Town",
         "time": 24,
         "home": false,
-        "position": [600, 210],
+        "position": [600, 170],
         "gif": "https://media.giphy.com/media/Urt2kvBfndrBVyf8bR/giphy.gif"
       },
       {
@@ -43,7 +43,7 @@
         "opponent": "Cardiff City",
         "time": 10,
         "home": true,
-        "position": [360, 140],
+        "position": [360, 100],
         "gif": "https://media.giphy.com/media/XekQ8SFeLrq4Qu0SDG/giphy.gif"
       },
       {
@@ -52,7 +52,7 @@
         "opponent": "Fulham",
         "time": 41,
         "home": true,
-        "position": [570, 210],
+        "position": [570, 170],
         "gif": "https://media.giphy.com/media/KE5cSutGxFsEh27TIW/giphy.gif"
       },
       {
@@ -61,7 +61,7 @@
         "opponent": "Watford",
         "time": 67,
         "home": false,
-        "position": [430, 180],
+        "position": [430, 140],
         "gif": "https://media.giphy.com/media/J2fXorW87QZvWERvrx/giphy.gif"
       },
       {
@@ -70,7 +70,7 @@
         "opponent": "Bournemouth",
         "time": 25,
         "home": false,
-        "position": [460, 170],
+        "position": [460, 130],
         "gif": "https://media.giphy.com/media/h6sKnTqcGDQxUXGd6Y/giphy.gif"
       },
       {
@@ -79,7 +79,7 @@
         "opponent": "Bournemouth",
         "time": 48,
         "home": false,
-        "position": [430, 220],
+        "position": [430, 180],
         "gif": "https://media.giphy.com/media/eH8hz1XDD4rYtxwd9p/giphy.gif"
       },
       {
@@ -88,7 +88,7 @@
         "opponent": "Bournemouth",
         "time": 77,
         "home": false,
-        "position": [450, 150],
+        "position": [450, 110],
         "gif": "https://media.giphy.com/media/ZZTGbiCJ1iQlnomGPp/giphy.gif"
       },
       {
@@ -97,7 +97,7 @@
         "opponent": "Wolverhampton",
         "time": 18,
         "home": false,
-        "position": [470, 170],
+        "position": [470, 130],
         "gif": "https://media.giphy.com/media/f74zAdqYCKe8qkoeLu/giphy.gif"
       },
       {
@@ -106,7 +106,7 @@
         "opponent": "Newcastle United",
         "time": 47,
         "home": true,
-        "position": [462, 210],
+        "position": [462, 170],
         "gif": "https://media.giphy.com/media/KB2LmTBprShlEUT11n/giphy.gif"
       },
       {
@@ -115,7 +115,7 @@
         "opponent": "Arsenal",
         "time": 47,
         "home": true,
-        "position": [462, 210],
+        "position": [462, 170],
         "gif": "https://media.giphy.com/media/eJG4wnirOHSplMZRJl/giphy.gif"
       },
       {
@@ -125,7 +125,7 @@
         "opponent": "Brighton",
         "time": 50,
         "home": false,
-        "position": [462, 210],
+        "position": [462, 170],
         "gif": "https://media.giphy.com/media/lp7XjIWtf5BZWPvopQ/giphy.gif"
       },
       {
@@ -134,7 +134,7 @@
         "opponent": "Crystal Palace",
         "time": 46,
         "home": true,
-        "position": [490, 168],
+        "position": [490, 128],
         "gif": "https://media.giphy.com/media/QX0ipstbFYAX1tjJgv/giphy.gif"
       },
       {
@@ -143,7 +143,7 @@
         "opponent": "Crystal Palace",
         "time": 75,
         "home": true,
-        "position": [470, 108],
+        "position": [470, 68],
         "gif": "https://media.giphy.com/media/QxpnHmcCa3qrSfEySf/giphy.gif"
       },
       {
@@ -152,7 +152,7 @@
         "opponent": "Bournemouth",
         "time": 48,
         "home": true,
-        "position": [490, 200],
+        "position": [490, 160],
         "gif": "https://media.giphy.com/media/jP4LUtDXFTDlk5Qkhy/giphy.gif"
       },
       {
@@ -161,7 +161,7 @@
         "opponent": "Southampton",
         "time": 80,
         "home": false,
-        "position": [440, 260],
+        "position": [440, 220],
         "gif": "https://media.giphy.com/media/Q79aNLOhTCBeBXJq5c/giphy.gif"
       },
       {
@@ -170,7 +170,7 @@
         "opponent": "Chelsea",
         "time": 51,
         "home": true,
-        "position": [600, 320],
+        "position": [600, 280],
         "gif": "https://media.giphy.com/media/YRiEi0caDnGwwcxBY9/giphy.gif"
       },
       {
@@ -179,7 +179,7 @@
         "opponent": "Huddersfield Town",
         "time": 46,
         "home": true,
-        "position": [550, 260],
+        "position": [550, 220],
         "gif": "https://media.giphy.com/media/S8wOzoLqv8XvxmAIdZ/giphy.gif"
       },
       {
@@ -188,7 +188,7 @@
         "opponent": "Huddersfield Town",
         "time": 83,
         "home": true,
-        "position": [435, 150],
+        "position": [435, 110],
         "gif": "https://media.giphy.com/media/jRM9umB6piQmlSu5ax/giphy.gif"
       },
       {
@@ -197,7 +197,7 @@
         "opponent": "Newcastle United",
         "time": 28,
         "home": false,
-        "position": [440, 190],
+        "position": [440, 150],
         "gif": "https://media.giphy.com/media/fvrPkcazRwzQGj8hWd/giphy.gif"
       }
     ],
@@ -208,7 +208,7 @@
         "opponent": "West Ham United",
         "time": 47,
         "home": true,
-        "position": [420, 120],
+        "position": [420, 80],
         "gif": "https://media.giphy.com/media/cjR2gOWNxKhJxcNAES/giphy.gif"
       },
 
@@ -218,7 +218,7 @@
         "opponent": "Crystal Palace",
         "time": 93,
         "home": false,
-        "position": [565, 170],
+        "position": [565, 130],
         "gif": "https://media.giphy.com/media/TjRklYSXDYG0uTr2AQ/giphy.gif"
       },
       {
@@ -227,7 +227,7 @@
         "opponent": "Leicester City",
         "time": 10,
         "home": false,
-        "position": [465, 180],
+        "position": [465, 140],
         "gif": "https://media.giphy.com/media/cLSmhmBDi4IwFGjCyD/giphy.gif"
       },
       {
@@ -236,7 +236,7 @@
         "opponent": "Cardiff City",
         "time": 66,
         "home": true,
-        "position": [355, 210],
+        "position": [355, 170],
         "gif": "https://media.giphy.com/media/SrzFGdns1agWwLcLVA/giphy.gif"
       },
       {
@@ -245,7 +245,7 @@
         "opponent": "Cardiff City",
         "time": 87,
         "home": true,
-        "position": [515, 210],
+        "position": [515, 170],
         "gif": "https://media.giphy.com/media/mG2iQfDZq0R9hNPBoz/giphy.gif"
       },
       {
@@ -254,7 +254,7 @@
         "opponent": "Manchester United",
         "time": 24,
         "home": true,
-        "position": [475, 180],
+        "position": [475, 140],
         "gif": "https://media.giphy.com/media/Qtuqeq1Zq7D27Wb9TG/giphy.gif"
       },
       {
@@ -263,7 +263,7 @@
         "opponent": "Arsenal",
         "time": 32,
         "home": true,
-        "position": [525, 170],
+        "position": [525, 130],
         "gif": "https://media.giphy.com/media/dY13mJedCAhbZXbHlw/giphy.gif"
       },
       {
@@ -272,7 +272,7 @@
         "opponent": "Crystal Place",
         "time": 93,
         "home": true,
-        "position": [330, 150],
+        "position": [330, 110],
         "gif": "https://media.giphy.com/media/ekA5hctpYs3wwQFIai/giphy.gif"
       },
       {
@@ -281,7 +281,7 @@
         "opponent": "Leicester City",
         "time": 3,
         "home": true,
-        "position": [420, 200],
+        "position": [420, 160],
         "gif": "https://media.giphy.com/media/cl8V78PBTk3wqfxT0f/giphy.gif"
       },
       {
@@ -290,7 +290,7 @@
         "opponent": "West Ham United",
         "time": 22,
         "home": false,
-        "position": [500, 169],
+        "position": [500, 129],
         "gif": "https://media.giphy.com/media/gkWDFmvu691SkCpglh/giphy.gif"
       },
       {
@@ -299,7 +299,7 @@
         "opponent": "Bournemouth",
         "time": 24,
         "home": true,
-        "position": [510, 172],
+        "position": [510, 132],
         "gif": "https://media.giphy.com/media/iF1AuWToULzeBZUzvQ/giphy.gif"
       },
       {
@@ -308,7 +308,7 @@
         "opponent": "Watford",
         "time": 9,
         "home": true,
-        "position": [512, 180],
+        "position": [512, 140],
         "gif": "https://media.giphy.com/media/XEOKxa92z30qFaPDXk/giphy.gif"
       },
       {
@@ -317,7 +317,7 @@
         "opponent": "Watford",
         "time": 20,
         "home": true,
-        "position": [475, 209],
+        "position": [475, 169],
         "gif": "https://media.giphy.com/media/RH7yH6s0bFPXntA1Ov/giphy.gif"
       },
       {
@@ -326,7 +326,7 @@
         "opponent": "Burnley",
         "time": 29,
         "home": true,
-        "position": [390, 210],
+        "position": [390, 170],
         "gif": "https://media.giphy.com/media/mG274VYvfyYgN0XOHg/giphy.gif"
       },
       {
@@ -335,7 +335,7 @@
         "opponent": "Burnley",
         "time": 93,
         "home": true,
-        "position": [335, 180],
+        "position": [335, 140],
         "gif": "https://media.giphy.com/media/XcdNYt388NYaaZfT0N/giphy.gif"
       },
       {
@@ -344,7 +344,7 @@
         "opponent": "Fulham",
         "time": 26,
         "home": false,
-        "position": [480, 170],
+        "position": [480, 130],
         "gif": "https://media.giphy.com/media/RiQM2sSz6nCMiT6ZKb/giphy.gif"
       },
       {
@@ -353,7 +353,7 @@
         "opponent": "Chelsea",
         "time": 53,
         "home": true,
-        "position": [410, 120],
+        "position": [410, 80],
         "gif": "https://media.giphy.com/media/YS5x24Nc4Gc4NHkcTh/giphy.gif"
       },
       {
@@ -362,7 +362,7 @@
         "opponent": "Huddersfield Town",
         "time": 23,
         "home": true,
-        "position": [380, 170],
+        "position": [380, 130],
         "gif": "https://media.giphy.com/media/f4UbWL2hsv28CeYWHt/giphy.gif"
       },
       {
@@ -371,7 +371,7 @@
         "opponent": "Huddersfield Town",
         "time": 66,
         "home": true,
-        "position": [380, 170],
+        "position": [380, 130],
         "gif": "https://media.giphy.com/media/TFOmRsZ5JtYpXhLAqj/giphy.gif"
       },
       {
@@ -380,7 +380,7 @@
         "opponent": "Wolverhampton",
         "time": 17,
         "home": true,
-        "position": [450, 170],
+        "position": [450, 130],
         "gif": "https://media.giphy.com/media/LOoD846jry3jwa7lbx/giphy.gif"
       },
       {
@@ -389,7 +389,7 @@
         "opponent": "Wolverhampton",
         "time": 81,
         "home": true,
-        "position": [420, 175],
+        "position": [420, 135],
         "gif": "https://media.giphy.com/media/YR7kuiK9117yRZs5Y1/giphy.gif"
       }
     ]

@@ -20,10 +20,12 @@ body {
 }
 .fa-github:before {
   color: black;
+  padding-right: 50px;
 }
 
 .fa-linkedin:before {
   color: black;
+  padding-right: 50px;
 }
 
 .fa-angellist:before {

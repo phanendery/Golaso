@@ -126,7 +126,7 @@ const plotData = () => {
             .attr("fill", color)
             .attr("stroke-width", 2)
             .on("mouseover", function(d) {
-              goal1.attr("fill", "green").attr("r", 8);
+              goal1.attr("fill", "#19bf0a").attr("r", 8);
             })
             .on("mouseout", function(d) {
               goal1.attr("fill", color).attr("r", 5);
@@ -134,13 +134,15 @@ const plotData = () => {
             .on("click", function(d) {
               let dataBox = svgContainer
                 .append("rect")
+                // .append("pattern")
                 .attr("x", 481)
                 .attr("y", 341)
                 .attr("width", 339)
                 .attr("height", 269)
                 .attr("stroke", "black")
-                .attr("fill", "white") //white LOOK HERE
+                .attr("fill", "#b2ebab") //CHANGE DATABOX BACKGROUND
                 .attr("stroke-width", 2);
+              // .attr("stroke-dasharray", 4);
 
               let oppHeader = svgContainer
                 .append("text")
@@ -148,7 +150,8 @@ const plotData = () => {
                 .attr("y", 390)
                 .text("Opponent:")
                 .attr("font-family", "Comfortaa, cursive")
-                .attr("font-size", 14);
+                .attr("font-size", 14)
+                .attr("text-decoration", "underline");
 
               let playerNameH = svgContainer
                 .append("text")
@@ -156,7 +159,9 @@ const plotData = () => {
                 .attr("y", 390)
                 .text("Player:")
                 .attr("font-family", "Comfortaa, cursive")
-                .attr("font-size", 14);
+                // .attr("font-weight", "bold")
+                .attr("font-size", 14)
+                .attr("text-decoration", "underline");
 
               let playerName = svgContainer
                 .append("text")
@@ -186,7 +191,8 @@ const plotData = () => {
                 .attr("y", 450)
                 .text(homeVal)
                 .attr("font-family", "Comfortaa, cursive")
-                .attr("font-size", 14);
+                .attr("font-size", 14)
+                .attr("text-decoration", "underline");
 
               let time = svgContainer
                 .append("text")
@@ -194,7 +200,8 @@ const plotData = () => {
                 .attr("y", 450)
                 .text("Time:")
                 .attr("font-family", "Comfortaa, cursive")
-                .attr("font-size", 14);
+                .attr("font-size", 14)
+                .attr("text-decoration", "underline");
 
               let goalTime = svgContainer
                 .append("text")
@@ -204,6 +211,9 @@ const plotData = () => {
                 .attr("fill", "green")
                 .attr("font-family", "Comfortaa, cursive")
                 .attr("font-size", 14);
+
+              // let playerDescription = svgContainer
+              // .append("")
 
               let salah = " https://www.dw.com/image/43516410_303.jpg";
               let mane =
@@ -219,16 +229,16 @@ const plotData = () => {
                 let playerpic = svgContainer
                   .append("image")
                   .attr("xlink:href", picLink)
-                  .attr("x", 470)
-                  .attr("y", 510)
+                  .attr("x", 480)
+                  .attr("y", 500)
                   .attr("height", 100)
                   .attr("width", 200);
               } else {
                 let playerpic = svgContainer
                   .append("image")
                   .attr("xlink:href", picLink)
-                  .attr("x", 455)
-                  .attr("y", 510)
+                  .attr("x", 465)
+                  .attr("y", 500)
                   .attr("height", 100)
                   .attr("width", 200);
               }
