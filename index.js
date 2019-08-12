@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   selector = document.getElementById("player"); //only works after the page loads
   plotData();
   selector.onchange = plotData;
+  d3.select("svg > circle.plotPoint").dispatch("click"); //ASK ETHAN FOR HELP
 });
 
 //Make an SVG Container
@@ -131,6 +132,7 @@ const plotData = () => {
               goal1.attr("fill", color).attr("r", 5);
             })
             .on("click", function(d) {
+              goal1.attr("fill", "#19bf0a").attr("r", 8);
               let dataBox = svgContainer
                 .append("rect")
                 .attr("x", 481)
@@ -150,16 +152,18 @@ const plotData = () => {
                 .attr("height", 500)
                 .attr("stroke", "black")
                 .attr("fill", "white")
-                .attr("stroke-width", 2);
+                .attr("stroke-width", 2)
+                .attr("fill","#b2ebab");
 
               let playerText = svgContainer
                 .append("foreignObject")
                 .text(playersD[goal.name])
                 .attr("id", "description")
                 .attr("x", 845)
-                .attr("y", 165)
+                .attr("y", 160)
                 .attr("width", 250)
-                .attr("height", 480);
+                .attr("height", 480)
+                .attr("font-family", "Roboto Condensed, sans-serif");
 
               let oppHeader = svgContainer
                 .append("text")
@@ -278,14 +282,11 @@ const plotData = () => {
       });
     });
   });
-  d3.select("svg > circle.plotPoint").dispatch("click");
 };
-
-
 
 playersD = {
   "Sadio Mane":
-    "Sadio Mané (born 10 April 1992) is a Senegalese professional footballer who plays as a winger for Premier League club Liverpool and the Senegal national team. Having begun his career with Metz in France, he transferred to Red Bull Salzburg in 2012. After winning the Austrian Bundesliga and Austrian Cup in 2014, he was signed by Southampton.In 2015, Mané set a new Premier League record for the fastest hat - trick when he scored three times in 176 seconds during a 6–1 win over Aston Villa.[4] He transferred to Liverpool in 2016 for a fee of £34 million, making him the most expensive African player in history at that time.[5][6] Since joining Liverpool, Mané among other achievements scored in the 2018 UEFA Champions League Final.The following season he was joint recipient of the Premier League Golden Boot with 22 goals, and was part of the Liverpool team that won the 2019 UEFA Champions League Final.",
+    "Sadio Mané (born 10 April 1992) is a Senegalese professional footballer who plays as a winger for Premier League club Liverpool and the Senegal national team. Having begun his career with Metz in France, he transferred to Red Bull Salzburg in 2012. After winning the Austrian Bundesliga and Austrian Cup in 2014, he was signed by Southampton.In 2015, Mané set a new Premier League record for the fastest hat - trick when he scored three times in 176 seconds during a 6–1 win over Aston Villa. He transferred to Liverpool in 2016 for a fee of £34 million, making him the most expensive African player in history at that time. Since joining Liverpool, Mané among other achievements scored in the 2018 UEFA Champions League Final.The following season he was joint recipient of the Premier League Golden Boot with 22 goals.",
   "Mohamed Salah":
-    "Mohamed Salah Hamed Mahrous Ghaly (Arabic: محمد صلاح حامد محروس غالى‎ Egyptian Arabic pronunciation: [mæˈħam.mæd sˤɑˈlɑːħ ˈɣæːli]; born 15 June 1992) is an Egyptian professional footballer who plays as a forward for Premier League club Liverpool and the Egypt national team. Considered one of the best players in the world, he is known for his finishing, dribbling, and speed.[6][7]Salah started his senior career with Cairo club El Mokawloon[8] in the Egyptian Premier League in 2010, departing shortly thereafter to join Basel for an undisclosed fee.In Switzerland, he starred as he helped the club win the league in his debut season, winning the SAFP Golden Player Award in the process.Salah's performances then attracted Premier League side Chelsea, and he joined the club for a £11 million fee in 2014. However, he was used sparingly in his debut season and was allowed to leave on loan to Serie A clubs Fiorentina and Roma, with the latter eventually signing him permanently for €15 million."
+    "Mohamed Salah Hamed Mahrous Ghaly (Born 15 June 1992) is an Egyptian professional footballer who plays as a forward for Premier League club Liverpool and the Egypt national team. Considered one of the best players in the world, he is known for his finishing, dribbling, and speed. Salah started his senior career with Cairo club El Mokawloon in the Egyptian Premier League in 2010, departing shortly thereafter to join Basel for an undisclosed fee.In Switzerland, he starred as he helped the club win the league in his debut season, winning the SAFP Golden Player Award in the process. Salah's performances then attracted Premier League side Chelsea, and he joined the club for a £11 million fee in 2014. After a brief stint at AS Roma he was bought by Liverpool for then a club record fee of £36.9 million."
 };
