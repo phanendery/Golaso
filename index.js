@@ -147,10 +147,7 @@ const plotData = () => {
                 .attr("x", 510)
                 .attr("y", 390)
                 .text("Opponent:")
-                .attr(
-                  "font-family",
-                  " Century Gothic,CenturyGothic,AppleGothic,sans-serif"
-                )
+                .attr("font-family", "Comfortaa, cursive")
                 .attr("font-size", 14);
 
               let playerNameH = svgContainer
@@ -158,10 +155,7 @@ const plotData = () => {
                 .attr("x", 660)
                 .attr("y", 390)
                 .text("Player:")
-                .attr(
-                  "font-family",
-                  " Century Gothic,CenturyGothic,AppleGothic,sans-serif"
-                )
+                .attr("font-family", "Comfortaa, cursive")
                 .attr("font-size", 14);
 
               let playerName = svgContainer
@@ -169,10 +163,7 @@ const plotData = () => {
                 .attr("x", 680)
                 .attr("y", 410)
                 .text(goal.name)
-                .attr(
-                  "font-family",
-                  " Century Gothic,CenturyGothic,AppleGothic,sans-serif"
-                )
+                .attr("font-family", "Comfortaa, cursive")
                 .attr("font-size", 14);
 
               let opponent = svgContainer
@@ -180,10 +171,7 @@ const plotData = () => {
                 .attr("x", 530)
                 .attr("y", 410)
                 .text(goal.opponent)
-                .attr(
-                  "font-family",
-                  " Century Gothic,CenturyGothic,AppleGothic,sans-serif"
-                )
+                .attr("font-family", "Comfortaa, cursive")
                 .attr("font-size", 14);
 
               let homeVal = "Away";
@@ -197,10 +185,7 @@ const plotData = () => {
                 .attr("x", 510)
                 .attr("y", 450)
                 .text(homeVal)
-                .attr(
-                  "font-family",
-                  " Century Gothic,CenturyGothic,AppleGothic,sans-serif"
-                )
+                .attr("font-family", "Comfortaa, cursive")
                 .attr("font-size", 14);
 
               let time = svgContainer
@@ -208,10 +193,7 @@ const plotData = () => {
                 .attr("x", 660)
                 .attr("y", 450)
                 .text("Time:")
-                .attr(
-                  "font-family",
-                  " Century Gothic,CenturyGothic,AppleGothic,sans-serif"
-                )
+                .attr("font-family", "Comfortaa, cursive")
                 .attr("font-size", 14);
 
               let goalTime = svgContainer
@@ -220,10 +202,7 @@ const plotData = () => {
                 .attr("y", 470)
                 .text(goal.time)
                 .attr("fill", "green")
-                .attr(
-                  "font-family",
-                  " Century Gothic,CenturyGothic,AppleGothic,sans-serif"
-                )
+                .attr("font-family", "Comfortaa, cursive")
                 .attr("font-size", 14);
 
               let salah = " https://www.dw.com/image/43516410_303.jpg";
