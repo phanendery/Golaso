@@ -106,6 +106,16 @@ let infoText4 = svgContainer
   .attr("font-family", "Darker Grotesque")
   .attr("font-size", 18);
 
+// let goalTest = svgContainer
+//   .append("circle")
+//   // .attr("class", "plotPoint")
+//   .attr("cx", 290)
+//   .attr("cy",80)
+//   .attr("r", 5)
+//   .attr("stroke", "white")
+//   .attr("fill", "black")
+//   .attr("stroke-width", 2)
+
 //for the data points
 const plotData = () => {
   d3.selectAll("svg > circle.plotPoint").remove();
@@ -153,7 +163,7 @@ const plotData = () => {
                 .attr("stroke", "black")
                 .attr("fill", "white")
                 .attr("stroke-width", 2)
-                .attr("fill","#b2ebab");
+                .attr("fill", "#b2ebab");
 
               let playerText = svgContainer
                 .append("foreignObject")
@@ -186,7 +196,7 @@ const plotData = () => {
 
               let playerName = svgContainer
                 .append("text")
-                .attr("x", 680)
+                .attr("x", 660)
                 .attr("y", 410)
                 .text(goal.name)
                 .attr("font-family", "Comfortaa, cursive")
@@ -194,7 +204,7 @@ const plotData = () => {
 
               let opponent = svgContainer
                 .append("text")
-                .attr("x", 530)
+                .attr("x", 510)
                 .attr("y", 410)
                 .text(goal.opponent)
                 .attr("font-family", "Comfortaa, cursive")
@@ -236,11 +246,59 @@ const plotData = () => {
               let salah = " https://www.dw.com/image/43516410_303.jpg";
               let mane =
                 "https://fadeawayworld.net/wp-content/uploads/2019/03/1134890328.jpg.0.jpg";
+              let auba =
+                "https://resources.premierleague.com/photos/2019/05/14/f47abf8e-b7fd-4b7e-88cf-c09ed5818c3f/Aubameyang.jpg?width=860&height=573";
+              let sergio =
+                "https://resources.premierleague.com/photos/2019/03/07/81966fb7-9cbd-4e77-8ed8-b221d814ef31/Aguero.jpg?width=932&height=620";
               let picLink = "";
               if (goal.name === "Mohamed Salah") {
                 picLink = salah;
-              } else {
+                let liverpool = svgContainer
+                  .append("image")
+                  .attr(
+                    "xlink:href",
+                    "https://upload.wikimedia.org/wikipedia/hif/b/bd/Liverpool_FC.png"
+                  )
+                  .attr("x", 640)
+                  .attr("y", 500)
+                  .attr("height", 100)
+                  .attr("width", 200);
+              } else if (goal.name === "Sadio Mane") {
                 picLink = mane;
+                let liverpool = svgContainer
+                  .append("image")
+                  .attr(
+                    "xlink:href",
+                    "https://upload.wikimedia.org/wikipedia/hif/b/bd/Liverpool_FC.png"
+                  )
+                  .attr("x", 640)
+                  .attr("y", 500)
+                  .attr("height", 100)
+                  .attr("width", 200);
+              } else if (goal.name === "Pierre Aubameyang") {
+                picLink = auba;
+                let arsenal = svgContainer
+                  .append("image")
+                  .attr(
+                    "xlink:href",
+                    "https://worldsportlogos.com/wp-content/uploads/2018/02/Arsenal-logo.png"
+                  )
+                  .attr("x", 640)
+                  .attr("y", 500)
+                  .attr("height", 100)
+                  .attr("width", 200);
+              } else if (goal.name === "Sergio Aguero") {
+                picLink = sergio;
+                let mancity = svgContainer
+                  .append("image")
+                  .attr(
+                    "xlink:href",
+                    "https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/1200px-Manchester_City_FC_badge.svg.png"
+                  )
+                  .attr("x", 640)
+                  .attr("y", 500)
+                  .attr("height", 100)
+                  .attr("width", 200);
               }
 
               if (picLink === salah) {
@@ -261,17 +319,6 @@ const plotData = () => {
                   .attr("width", 200);
               }
 
-              let liverpool = svgContainer
-                .append("image")
-                .attr(
-                  "xlink:href",
-                  "https://upload.wikimedia.org/wikipedia/hif/b/bd/Liverpool_FC.png"
-                )
-                .attr("x", 640)
-                .attr("y", 500)
-                .attr("height", 100)
-                .attr("width", 200);
-
               let gifGoal = svgContainer
                 .append("image")
                 .attr("xlink:href", goal.gif)
@@ -288,5 +335,9 @@ playersD = {
   "Sadio Mane":
     "Sadio Mané (born 10 April 1992) is a Senegalese professional footballer who plays as a winger for Premier League club Liverpool and the Senegal national team. Having begun his career with Metz in France, he transferred to Red Bull Salzburg in 2012. After winning the Austrian Bundesliga and Austrian Cup in 2014, he was signed by Southampton.In 2015, Mané set a new Premier League record for the fastest hat - trick when he scored three times in 176 seconds during a 6–1 win over Aston Villa. He transferred to Liverpool in 2016 for a fee of £34 million, making him the most expensive African player in history at that time. Since joining Liverpool, Mané among other achievements scored in the 2018 UEFA Champions League Final.The following season he was joint recipient of the Premier League Golden Boot with 22 goals.",
   "Mohamed Salah":
-    "Mohamed Salah Hamed Mahrous Ghaly (Born 15 June 1992) is an Egyptian professional footballer who plays as a forward for Premier League club Liverpool and the Egypt national team. Considered one of the best players in the world, he is known for his finishing, dribbling, and speed. Salah started his senior career with Cairo club El Mokawloon in the Egyptian Premier League in 2010, departing shortly thereafter to join Basel for an undisclosed fee.In Switzerland, he starred as he helped the club win the league in his debut season, winning the SAFP Golden Player Award in the process. Salah's performances then attracted Premier League side Chelsea, and he joined the club for a £11 million fee in 2014. After a brief stint at AS Roma he was bought by Liverpool for then a club record fee of £36.9 million."
-};
+    "Mohamed Salah Hamed Mahrous Ghaly (Born 15 June 1992) is an Egyptian professional footballer who plays as a forward for Premier League club Liverpool and the Egypt national team. Considered one of the best players in the world, he is known for his finishing, dribbling, and speed. Salah started his senior career with Cairo club El Mokawloon in the Egyptian Premier League in 2010, departing shortly thereafter to join Basel for an undisclosed fee.In Switzerland, he starred as he helped the club win the league in his debut season, winning the SAFP Golden Player Award in the process. Salah's performances then attracted Premier League side Chelsea, and he joined the club for a £11 million fee in 2014. After a brief stint at AS Roma he was bought by Liverpool for then a club record fee of £36.9 million.",
+  "Pierre Aubameyang":
+    "Pierre-Emerick Emiliano François Aubameyang (born 18 June 1989) is a Gabonese professional footballer who plays as a forward for Premier League club Arsenal and is the captain of the Gabon national team. He is known for his pace, finishing, and off-ball movement. Aubameyang plays mainly as a striker, but has also been deployed as a wide forward.In 2018, Aubemyang was the subject of a club-record transfer to English team Arsenal, when he moved from Borussia Dortmund in a deal worth £56 million (€64 million). This made him, at the time, the most expensive African player ever, while he ranks as the most expensive Gabonese player of all time. In his first full season in England, Aubameyang finished as the league's joint top-goalscorer and helped Arsenal reach the UEFA Europa League final."
+  ,"Sergio Aguero":
+    "Sergio Leonel Agüero (born 2 June 1988) is an Argentine professional footballer who plays as a striker for Premier League club Manchester City and the Argentine national team.Agüero moved to Premier League club Manchester City in July 2011 for an undisclosed fee thought to be in the region of £35 million. On the last day of his debut season with the club, he scored a 94th-minute winner against Queens Park Rangers that earned City its first league title in 44 years. At the end of the 2015–16 season, of players who had played at least two seasons in the Premier League, Agüero had the highest goals per minute ratio in the history of the competition since its formation in 1992, averaging a goal every 106 minutes, ahead of Thierry Henry. He wears Kun on his shirt, a childhood nickname based on the title character from the cartoon Kum-Kum."
+  };

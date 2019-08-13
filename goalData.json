@@ -392,6 +392,191 @@
         "position": [420, 135],
         "gif": "https://media.giphy.com/media/YR7kuiK9117yRZs5Y1/giphy.gif"
       }
+    ],
+
+    "PierreAubameyang": [
+      {
+        "id": 1,
+        "name": "Pierre Aubameyang",
+        "opponent": "Cardiff City",
+        "time": 62,
+        "home": false,
+        "position": [380, 260],
+        "gif": "https://media.giphy.com/media/KxiCTMYGnBw5jHO7Xh/giphy.gif"
+      },
+      {
+        "id": 2,
+        "name": "Pierre Aubameyang",
+        "opponent": "Everton",
+        "time": 59,
+        "home": true,
+        "position": [370, 120],
+        "gif": "https://media.giphy.com/media/jVNpWPajqvnITtOhao/giphy.gif"
+      },
+      {
+        "id": 3,
+        "name": "Pierre Aubameyang",
+        "opponent": "Fulham",
+        "time": 79,
+        "home": false,
+        "position": [480, 120],
+        "gif": "https://media.giphy.com/media/W1rgN5fyOTwldw5i0T/giphy.gif"
+      },
+      {
+        "id": 4,
+        "name": "Pierre Aubameyang",
+        "opponent": "Fulham",
+        "time": 91,
+        "home": false,
+        "position": [469,220],
+        "gif": "https://media.giphy.com/media/kgfHdaOssqF1oDHEnF/giphy.gif"
+      },
+      {
+        "id": 5,
+        "name": "Pierre Aubameyang",
+        "opponent": "Leicester City",
+        "time": 63,
+        "home": true,
+        "position": [390, 90],
+        "gif": "https://media.giphy.com/media/YOeqiEZ7sGFDL6E3jr/giphy.gif"
+      },
+      {
+        "id": 6,
+        "name": "Pierre Aubameyang",
+        "opponent": "Leicester City",
+        "time": 66,
+        "home": true,
+        "position": [420,80],
+        "gif": "https://media.giphy.com/media/h5oazIfoFImdWe6GFO/giphy.gif"
+      },
+      {
+        "id": 7,
+        "name": "Pierre Aubameyang",
+        "opponent": "Crystal Palace",
+        "time": 56,
+        "home": false,
+        "position": [340, 65],
+        "gif": "https://media.giphy.com/media/RiQnEHMBbmtxdhncRk/giphy.gif"
+      },
+      {
+        "id": 8,
+        "name": "Pierre Aubameyang",
+        "opponent": "Bournemouth",
+        "time": 67,
+        "home": false,
+        "position": [420,95],
+        "gif": "https://media.giphy.com/media/KZYnYd5YZXGeyxf3oQ/giphy.gif"
+      },
+      {
+        "id": 9,
+        "name": "Pierre Aubameyang",
+        "opponent": "Tottenham Hotspur",
+        "time": 10,
+        "home": true,
+        "position": [380,130],
+        "gif": "https://media.giphy.com/media/VI9Mwdon8tm5hg66KR/giphy.gif"
+      },
+      {
+        "id": 10,
+        "name": "Pierre Aubameyang",
+        "opponent": "Tottenham Hotspur",
+        "time": 56,
+        "home": true,
+        "position": [420, 238],
+        "gif": "https://media.giphy.com/media/WpxbFfpkXHVUgWnr5X/giphy.gif"
+      }
+    ],
+    "SergioAgureo": [
+      {
+        "id": 1,
+        "name": "Sergio Aguero",
+        "opponent": "Huddersfield Town",
+        "time": 25,
+        "home": true,
+        "position": [450, 244],
+        "gif": "https://media.giphy.com/media/ekNAqRKwHQhADhdwx8/giphy.gif"
+      },
+      {
+        "id": 2,
+        "name": "Sergio Aguero",
+        "opponent": "Huddersfield Town",
+        "time": 35,
+        "home": true,
+        "position": [360,84],
+        "gif": "https://media.giphy.com/media/J1dqDAgFkJVETAmi28/giphy.gif"
+      },
+      {
+        "id": 3,
+        "name": "Sergio Aguero",
+        "opponent": "Huddersfield Town",
+        "time": 75,
+        "home": true,
+        "position": [420,84],
+        "gif": "https://media.giphy.com/media/dtCpfNNq4oeyPXTd0f/giphy.gif"
+      },
+      {
+        "id": 4,
+        "name": "Sergio Aguero",
+        "opponent": "Cardiff City",
+        "time": 32,
+        "home": false,
+        "position": [440,150],
+        "gif": "https://media.giphy.com/media/TiyUhr9Ph82igFfDov/giphy.gif"
+      },
+      {
+        "id": 5,
+        "name": "Sergio Aguero",
+        "opponent": "Brighton & Hove Albion",
+        "time": 29,
+        "home": true,
+        "position": [430,140],
+        "gif": "https://media.giphy.com/media/lTGeHdiTuTEqnJMGyZ/giphy.gif"
+      },
+      {
+        "id": 6,
+        "name": "Sergio Aguero",
+        "opponent": "Burnley",
+        "time": 17,
+        "home": true,
+        "position": [485,120],
+        "gif": "https://media.giphy.com/media/XE1jbzt0b7iv0mElnS/giphy.gif"
+      },
+      {
+        "id": 7,
+        "name": "Sergio Aguero",
+        "opponent": "Southampton",
+        "time": 12,
+        "home": true,
+        "position": [435,60],
+        "gif": "https://media.giphy.com/media/Idxlhu9UHXNTskVnxG/giphy.gif"
+      },
+      {
+        "id": 8,
+        "name": "Sergio Aguero",
+        "opponent": "Manchester United",
+        "time": 48,
+        "home": true,
+        "position": [535,130],
+        "gif": "https://media.giphy.com/media/Urnak6TXAjYAvHZWyW/giphy.gif"
+      },
+      {
+        "id": 9,
+        "name": "Sergio Aguero",
+        "opponent": "Southampton",
+        "time": 48,
+        "home": false,
+        "position": [425,120],
+        "gif": "https://media.giphy.com/media/KfZ4YyHT9gCbiScq6M/giphy.gif"
+      },
+      {
+        "id": 10,
+        "name": "Sergio Aguero",
+        "opponent": "Liverpool",
+        "time": 40,
+        "home": true,
+        "position": [290, 80],
+        "gif": "https://media.giphy.com/media/Y2t6hQyjD0479OAArz/giphy.gif"
+      }
     ]
   }
 }
