@@ -1,10 +1,10 @@
 var selector; //global variable
 document.addEventListener("DOMContentLoaded", () => {
   selector = document.getElementById("player"); //only works after the page loads
-  plotData(()=>{
+  plotData(() => {
     let svg = d3.select("svg > circle.plotPoint").dispatch("click");
   });
-  selector.onchange = (e)=>{
+  selector.onchange = e => {
     plotData(() => {
       let svg = d3.select("svg > circle.plotPoint").dispatch("click");
     });
@@ -122,7 +122,7 @@ let infoText4 = svgContainer
 //   .attr("stroke-width", 2)
 
 //for the data points
-const plotData = (cb) => {
+const plotData = cb => {
   d3.selectAll("svg > circle.plotPoint").remove();
   d3.json("goalData.json", function(data) {
     Object.values(data.players).forEach(player => {
@@ -147,7 +147,10 @@ const plotData = (cb) => {
               goal1.attr("fill", color).attr("r", 5);
             })
             .on("click", function(d) {
-              d3.selectAll("svg > circle.circleSelected").attr("class","plotPoint");
+              d3.selectAll("svg > circle.circleSelected").attr(
+                "class",
+                "plotPoint"
+              );
               goal1.attr("class", "circleSelected");
               let dataBox = svgContainer
                 .append("rect")
@@ -179,7 +182,8 @@ const plotData = (cb) => {
                 .attr("y", 160)
                 .attr("width", 250)
                 .attr("height", 480)
-                .attr("font-family", "Roboto Condensed, sans-serif");
+                .attr("font-family", "Roboto Condensed, sans-serif")
+                .attr("color", "rgb(83, 90, 88)");
 
               let oppHeader = svgContainer
                 .append("text")
@@ -344,7 +348,7 @@ playersD = {
   "Mohamed Salah":
     "Mohamed Salah Hamed Mahrous Ghaly (Born 15 June 1992) is an Egyptian professional footballer who plays as a forward for Premier League club Liverpool and the Egypt national team. Considered one of the best players in the world, he is known for his finishing, dribbling, and speed. Salah started his senior career with Cairo club El Mokawloon in the Egyptian Premier League in 2010, departing shortly thereafter to join Basel for an undisclosed fee.In Switzerland, he starred as he helped the club win the league in his debut season, winning the SAFP Golden Player Award in the process. Salah's performances then attracted Premier League side Chelsea, and he joined the club for a £11 million fee in 2014. After a brief stint at AS Roma he was bought by Liverpool for then a club record fee of £36.9 million.",
   "Pierre Aubameyang":
-    "Pierre-Emerick Emiliano François Aubameyang (born 18 June 1989) is a Gabonese professional footballer who plays as a forward for Premier League club Arsenal and is the captain of the Gabon national team. He is known for his pace, finishing, and off-ball movement. Aubameyang plays mainly as a striker, but has also been deployed as a wide forward.In 2018, Aubemyang was the subject of a club-record transfer to English team Arsenal, when he moved from Borussia Dortmund in a deal worth £56 million (€64 million). This made him, at the time, the most expensive African player ever, while he ranks as the most expensive Gabonese player of all time. In his first full season in England, Aubameyang finished as the league's joint top-goalscorer and helped Arsenal reach the UEFA Europa League final."
-  ,"Sergio Aguero":
+    "Pierre-Emerick Emiliano François Aubameyang (born 18 June 1989) is a Gabonese professional footballer who plays as a forward for Premier League club Arsenal and is the captain of the Gabon national team. He is known for his pace, finishing, and off-ball movement. Aubameyang plays mainly as a striker, but has also been deployed as a wide forward.In 2018, Aubemyang was the subject of a club-record transfer to English team Arsenal, when he moved from Borussia Dortmund in a deal worth £56 million (€64 million). This made him, at the time, the most expensive African player ever, while he ranks as the most expensive Gabonese player of all time. In his first full season in England, Aubameyang finished as the league's joint top-goalscorer and helped Arsenal reach the UEFA Europa League final.",
+  "Sergio Aguero":
     "Sergio Leonel Agüero (born 2 June 1988) is an Argentine professional footballer who plays as a striker for Premier League club Manchester City and the Argentine national team.Agüero moved to Premier League club Manchester City in July 2011 for an undisclosed fee thought to be in the region of £35 million. On the last day of his debut season with the club, he scored a 94th-minute winner against Queens Park Rangers that earned City its first league title in 44 years. At the end of the 2015–16 season, of players who had played at least two seasons in the Premier League, Agüero had the highest goals per minute ratio in the history of the competition since its formation in 1992, averaging a goal every 106 minutes, ahead of Thierry Henry. He wears Kun on his shirt, a childhood nickname based on the title character from the cartoon Kum-Kum."
-  };
+};
