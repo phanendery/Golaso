@@ -1,9 +1,14 @@
 var selector; //global variable
 document.addEventListener("DOMContentLoaded", () => {
   selector = document.getElementById("player"); //only works after the page loads
-  plotData();
-  selector.onchange = plotData;
-  d3.select("svg > circle.plotPoint").dispatch("click"); //ASK ETHAN FOR HELP
+  plotData(()=>{
+    let svg = d3.select("svg > circle.plotPoint").dispatch("click");
+  });
+  selector.onchange = (e)=>{
+    plotData(() => {
+      let svg = d3.select("svg > circle.plotPoint").dispatch("click");
+    });
+  };
 });
 
 //Make an SVG Container
@@ -117,7 +122,7 @@ let infoText4 = svgContainer
 //   .attr("stroke-width", 2)
 
 //for the data points
-const plotData = () => {
+const plotData = (cb) => {
   d3.selectAll("svg > circle.plotPoint").remove();
   d3.json("goalData.json", function(data) {
     Object.values(data.players).forEach(player => {
@@ -142,7 +147,8 @@ const plotData = () => {
               goal1.attr("fill", color).attr("r", 5);
             })
             .on("click", function(d) {
-              goal1.attr("fill", "#19bf0a").attr("r", 8);
+              d3.selectAll("svg > circle.circleSelected").attr("class","plotPoint");
+              goal1.attr("class", "circleSelected");
               let dataBox = svgContainer
                 .append("rect")
                 .attr("x", 481)
@@ -328,6 +334,7 @@ const plotData = () => {
         }
       });
     });
+    cb();
   });
 };
 

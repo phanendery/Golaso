@@ -42,3 +42,25 @@ body {
 #description{
   
 }
+
+@keyframes selected {
+  0% { /* % of time */
+    fill: blue;
+    r: 8; 
+  }
+
+  50% {
+    fill: purple;
+    r: 9;
+  }
+
+  100% {
+    fill: blue;
+    r: 8;
+  }
+}
+
+.circleSelected{
+  animation: selected 3s infinite;
+  r: 8;
+}
