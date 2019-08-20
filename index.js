@@ -81,7 +81,7 @@ let infoText1 = svgContainer
   .append("text")
   .attr("x", 840)
   .attr("y", 40)
-  .text("Welcome to Golaso! This is a interactive")
+  .text("Welcome to Golaso! This is an interactive")
   .attr("font-family", "Darker Grotesque")
   .attr("font-size", 18);
 
